@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+* ::after, * ::before {
+    box-sizing: border-box;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: clamp(36px, 2vw, 40px);
+}
+
+h2 {
+    font-size: clamp(26px, 2vw, 36px);
+}
+
+h1,
+h2 {
+    color: hsl(210, 10%, 33%);
+    padding: 1% 0;
+}
+
+p {
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 1.5;
+    padding: 1% 0;
+    color: hsl(201, 11%, 66%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    text-align: center;
+    padding: 5% 3.5%;
+}
+
+.col {
+    padding: 7% 0;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 300px;
+    margin: 20px auto;
+    color: #fff;
+    border-radius: 24px;
+    box-shadow: 5px 5px 10px -10px #999;
+}
+
+.btn__IOS {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.btn__Mac {
+    background-color: hsl(233, 100%, 69%);
+}
+
+/* ========= header ========== */
+
+header {
+    background-image: url("../images/bg-header-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.header__logo {
+    margin: 30% auto;
+}
+
+
+/* ========= product details ========== */
+
+.prod__details--img {
+    padding-bottom: 3%;
+}
+
+
+/* ========= footer ========== */
+
+
+footer {
+    background-color: hsl(201, 11%, 96%);
+}
+
+.footer__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.footer__info--item {
+    padding: 10px 0;
+}
+
+.footer__socail--item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer__link {
+    color: hsl(210, 10%, 33%);
+    font-size: 16px;
+}
+
+.footer__socail--link {
+    font-size: 25px;
+}
+
+/* ========= hover effect ========== */
+
+.btn__Mac:hover {
+    background-color: hsl(233, 100%, 80%);
+}
+
+.btn__IOS:hover {
+    background-color: hsl(171, 66%, 60%);
+}
+
+footer a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+
+/* ========= Medai Query ========== */
+
+@media(min-width: 700px) {
+
+    .row {
+        display: flex;
+    }
+    
+    .col {
+        padding: 3.5% 3%;
+        width: 100%;
+    }
+
+    .btn__container {
+        justify-content: space-around;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .btn__IOS {
+        margin-left: auto;
+        margin-right: 1%;
+    }
+
+    .btn__Mac {
+        margin-right: auto;
+        margin-left: 1%;
+    }
+
+    header {
+        background-image: url("../images/bg-header-desktop.png");
+        
+    }
+
+    .header__logo {
+        margin: 15% auto;
+    }
+    
+    .computer__container--col,
+    .computer__container {
+        padding-left: 0;
+    }
+    
+    .footer__container {
+        text-align: unset;
+    }
+    .info__list {
+        display: flex;
+        justify-content: space-between;
+        width: 130%;
+    }
+
+    .socail {
+        text-align: right;
+    } 
+
+    .logo__container {
+        width: 40%;
+    }
+
+    
+
+
+}
+
+
